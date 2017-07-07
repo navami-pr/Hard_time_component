@@ -1,0 +1,141 @@
+<RvwService serviceName="GAEDKHTCPgeneraREPORT_srv" serviceType="0" inSegs="" outSegs="ErrorDetails;GAEDKHTCPgeneraGRD1_repgrmsg;" ioSegs="GAEDKHTCP_genera_rep_hr_hsg;" scSegs="" inSegCnt="0" outSegCnt="1" scSegCnt="0" psCnt="1" ioSegCnt="1" dataSegs="GAEDKHTCP_genera_rep_hr_hsg;GAEDKHTCPgeneraGRD1_repgrmsg;" segCnt="2">
+    <PS sectionType="0" seqNo="1" controlExpressionEval="false" controlExpression="" loopingStyle="0" loopCausingSegment="" ceInstDepFlag="0" brsCnt="2" sectionName="GAEDKHTCP_REPORT_ps">
+        <BR seqNo="1" baseArtifact="false" isMethod="1" progID="" methodName="gaedkhtcp_genera_rep_hr_mth" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="1" loopSegment="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="gaedkhtcp_genera_hr" operationType="0" spErrorProtocol="0" brppCnt="26" brlpCnt="0">
+            <PP physicalParameterName="ctxt_language" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_COMPONENT" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_COMPONENT" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_ACTIVITY" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_ACTIVITY" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_OU" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_OU" spParameterType="INTEGER" />
+            <PP physicalParameterName="CTXT_BASE_UI" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_UI" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_EXTN_BASED_ON" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_EXTN_BASED_ON" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="AC_MODEL" seqNo="11" isCompoundParam="1" flowDirection="2" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AC_MODEL" spParameterType="VARCHAR" />
+            <PP physicalParameterName="AC_MODEL_HDN" seqNo="12" isCompoundParam="1" flowDirection="2" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AC_MODEL_HDN" spParameterType="VARCHAR" />
+            <PP physicalParameterName="AC_REG_NUMBER" seqNo="13" isCompoundParam="1" flowDirection="2" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AC_REG_NUMBER" spParameterType="VARCHAR" />
+            <PP physicalParameterName="AIRCRAFT_REG_NO_HDR" seqNo="14" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AIRCRAFT_REG_NO_HDR" spParameterType="VARCHAR" />
+            <PP physicalParameterName="CSN_HDR" seqNo="15" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CSN_HDR" spParameterType="VARCHAR" />
+            <PP physicalParameterName="DUMMY_HDR" seqNo="16" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="DUMMY_HDR" spParameterType="VARCHAR" />
+            <PP physicalParameterName="DUMMY_HDR2" seqNo="17" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="DUMMY_HDR2" spParameterType="VARCHAR" />
+            <PP physicalParameterName="DUMMY_HDR3" seqNo="18" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="DUMMY_HDR3" spParameterType="VARCHAR" />
+            <PP physicalParameterName="DUMMY_HDR4" seqNo="19" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="DUMMY_HDR4" spParameterType="INTEGER" />
+            <PP physicalParameterName="DUMMY_HDR5" seqNo="20" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="DUMMY_HDR5" spParameterType="INTEGER" />
+            <PP physicalParameterName="DUMMY_HDR6" seqNo="21" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="DUMMY_HDR6" spParameterType="INTEGER" />
+            <PP physicalParameterName="HIDDEN_INT" seqNo="22" isCompoundParam="1" flowDirection="2" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="HIDDEN_INT" spParameterType="NUMERIC" />
+            <PP physicalParameterName="HTC_ADD1_HDR" seqNo="23" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="HTC_ADD1_HDR" spParameterType="VARCHAR" />
+            <PP physicalParameterName="HTC_ADD2_HDR" seqNo="24" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="HTC_ADD2_HDR" spParameterType="VARCHAR" />
+            <PP physicalParameterName="RPT_GEN_DATE_HDR" seqNo="25" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="RPT_GEN_DATE_HDR" spParameterType="DATE" />
+            <PP physicalParameterName="TSN_HDR" seqNo="26" isCompoundParam="1" flowDirection="1" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="TSN_HDR" spParameterType="VARCHAR" />
+        </BR>
+        <BR seqNo="2" baseArtifact="false" isMethod="1" progID="" methodName="gaedkhtcp_genera_grd1_gr_mth" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="gaedkhtcp_genera_grd1_gr" operationType="0" spErrorProtocol="0" brppCnt="15" brlpCnt="26">
+            <PP physicalParameterName="ctxt_language" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_COMPONENT" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_COMPONENT" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_ACTIVITY" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_ACTIVITY" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_OU" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_OU" spParameterType="INTEGER" />
+            <PP physicalParameterName="CTXT_BASE_UI" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_BASE_UI" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_EXTN_BASED_ON" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="CTXT_EXTN_BASED_ON" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="AC_MODEL" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AC_MODEL" spParameterType="VARCHAR" />
+            <PP physicalParameterName="AC_MODEL_HDN" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AC_MODEL_HDN" spParameterType="VARCHAR" />
+            <PP physicalParameterName="AC_REG_NUMBER" seqNo="13" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="AC_REG_NUMBER" spParameterType="VARCHAR" />
+            <PP physicalParameterName="HIDDEN_INT" seqNo="14" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_genera_rep_hr_hsg" dataItemName="HIDDEN_INT" spParameterType="NUMERIC" />
+            <PP physicalParameterName="RSETGRD1" seqNo="15" isCompoundParam="0" flowDirection="1" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="" />
+            <LP logicalParameterName="DUMMYS_DTL" seqNo="1" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="DUMMYS_DTL" />
+            <LP logicalParameterName="DUMMYS_DTL1" seqNo="2" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="DUMMYS_DTL1" />
+            <LP logicalParameterName="DUMMYS_DTL2" seqNo="3" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="DUMMYS_DTL2" />
+            <LP logicalParameterName="DUMMYS_DTL3" seqNo="4" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="DUMMYS_DTL3" />
+            <LP logicalParameterName="DUMMYS_DTL4" seqNo="5" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="DUMMYS_DTL4" />
+            <LP logicalParameterName="DUMMYS_DTL5" seqNo="6" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="DUMMYS_DTL5" />
+            <LP logicalParameterName="HTC_AC_REG_NO" seqNo="7" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_AC_REG_NO" />
+            <LP logicalParameterName="HTC_AC_USAGE_VAL" seqNo="8" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_AC_USAGE_VAL" />
+            <LP logicalParameterName="HTC_ATA_NO" seqNo="9" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_ATA_NO" />
+            <LP logicalParameterName="HTC_CSN" seqNo="10" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_CSN" />
+            <LP logicalParameterName="HTC_DUE_IN_TERMS_OF_AC" seqNo="11" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_DUE_IN_TERMS_OF_AC" />
+            <LP logicalParameterName="HTC_INTERVAL" seqNo="12" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_INTERVAL" />
+            <LP logicalParameterName="HTC_LAST_COMPLIED_EXEC" seqNo="13" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_LAST_COMPLIED_EXEC" />
+            <LP logicalParameterName="HTC_LAST_PERFORMED_DATE" seqNo="14" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_LAST_PERFORMED_DATE" />
+            <LP logicalParameterName="HTC_LAST_PERFORMED_VALUE" seqNo="15" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_LAST_PERFORMED_VALUE" />
+            <LP logicalParameterName="HTC_NEXT_SCHEDULED_DATE" seqNo="16" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_NEXT_SCHEDULED_DATE" />
+            <LP logicalParameterName="HTC_NEXT_SCHEDULED_VALUE" seqNo="17" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_NEXT_SCHEDULED_VALUE" />
+            <LP logicalParameterName="HTC_PARAMETER" seqNo="18" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_PARAMETER" />
+            <LP logicalParameterName="HTC_PART_DESC" seqNo="19" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_PART_DESC" />
+            <LP logicalParameterName="HTC_PART_NO" seqNo="20" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_PART_NO" />
+            <LP logicalParameterName="HTC_REMAINING_HOURS" seqNo="21" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_REMAINING_HOURS" />
+            <LP logicalParameterName="HTC_SERIAL_NO" seqNo="22" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_SERIAL_NO" />
+            <LP logicalParameterName="HTC_SR_NO" seqNo="23" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_SR_NO" />
+            <LP logicalParameterName="HTC_TASK_DESC" seqNo="24" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_TASK_DESC" />
+            <LP logicalParameterName="HTC_TCN" seqNo="25" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_TCN" />
+            <LP logicalParameterName="HTC_TIME_UNIT" seqNo="26" dataSegmentName="GAEDKHTCPgeneraGRD1_repgrmsg" dataItemName="HTC_TIME_UNIT" />
+        </BR>
+    </PS>
+    <SEG segmentName="fw_context" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="1" segKeys="" diCnt="13" inDINames="" ioDINames="SecToken;Component;Service;OUInstance;ComponentInstance;" outDINames="TransactionObject;User;Language;TxnTime;TxnID;TxnOutcome;" scDINames="ConnectionString;Role;" diNames="SecToken;Component;Service;OUInstance;ComponentInstance;TransactionObject;User;Language;TxnTime;TxnID;TxnOutcome;ConnectionString;Role;" inDICnt="0" outDICnt="6" ioDICnt="5" scDICnt="2">
+        <DI dataItemName="TransactionObject" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="User" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="Language" dataType="3" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="SecToken" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="Component" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="Service" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="OUInstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ComponentInstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="TxnTime" dataType="8" dataLength="50" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="TxnID" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="TxnOutcome" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ConnectionString" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+        <DI dataItemName="Role" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+    </SEG>
+    <SEG segmentName="GAEDKHTCP_genera_rep_hr_hsg" seqNo="0" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="0" segKeys="" diCnt="21" inDINames="" ioDINames="AC_MODEL;AC_MODEL_HDN;AC_REG_NUMBER;CTXT_BASE_ACTIVITY;CTXT_BASE_COMPONENT;CTXT_BASE_OU;CTXT_BASE_UI;CTXT_EXTN_BASED_ON;HIDDEN_INT;" outDINames="AIRCRAFT_REG_NO_HDR;CSN_HDR;DUMMY_HDR;DUMMY_HDR2;DUMMY_HDR3;DUMMY_HDR4;DUMMY_HDR5;DUMMY_HDR6;HTC_ADD1_HDR;HTC_ADD2_HDR;RPT_GEN_DATE_HDR;TSN_HDR;" scDINames="" diNames="AC_MODEL;AC_MODEL_HDN;AC_REG_NUMBER;AIRCRAFT_REG_NO_HDR;CSN_HDR;CTXT_BASE_ACTIVITY;CTXT_BASE_COMPONENT;CTXT_BASE_OU;CTXT_BASE_UI;CTXT_EXTN_BASED_ON;DUMMY_HDR;DUMMY_HDR2;DUMMY_HDR3;DUMMY_HDR4;DUMMY_HDR5;DUMMY_HDR6;HIDDEN_INT;HTC_ADD1_HDR;HTC_ADD2_HDR;RPT_GEN_DATE_HDR;TSN_HDR;" inDICnt="0" outDICnt="12" ioDICnt="9" scDICnt="0">
+        <DI dataItemName="AC_MODEL" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="" />
+        <DI dataItemName="AC_MODEL_HDN" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="" />
+        <DI dataItemName="AC_REG_NUMBER" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="" />
+        <DI dataItemName="AIRCRAFT_REG_NO_HDR" dataType="8" dataLength="30" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="CSN_HDR" dataType="8" dataLength="13" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="CTXT_BASE_ACTIVITY" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="CTXT_BASE_COMPONENT" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="CTXT_BASE_OU" dataType="3" dataLength="4" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="0" bt_Type="INTEGER" isModel="" />
+        <DI dataItemName="CTXT_BASE_UI" dataType="8" dataLength="100" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="CTXT_EXTN_BASED_ON" dataType="8" dataLength="30" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="DUMMY_HDR" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMY_HDR2" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMY_HDR3" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMY_HDR4" dataType="3" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="0" bt_Type="INTEGER" isModel="1" />
+        <DI dataItemName="DUMMY_HDR5" dataType="3" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="0" bt_Type="INTEGER" isModel="1" />
+        <DI dataItemName="DUMMY_HDR6" dataType="3" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="0" bt_Type="INTEGER" isModel="1" />
+        <DI dataItemName="HIDDEN_INT" dataType="5" dataLength="19" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" />
+        <DI dataItemName="HTC_ADD1_HDR" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_ADD2_HDR" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="RPT_GEN_DATE_HDR" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="1" />
+        <DI dataItemName="TSN_HDR" dataType="8" dataLength="13" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+    </SEG>
+    <SEG segmentName="GAEDKHTCPgeneraGRD1_repgrmsg" seqNo="0" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="26" inDINames="" ioDINames="" outDINames="DUMMYS_DTL;DUMMYS_DTL1;DUMMYS_DTL2;DUMMYS_DTL3;DUMMYS_DTL4;DUMMYS_DTL5;HTC_AC_REG_NO;HTC_AC_USAGE_VAL;HTC_ATA_NO;HTC_CSN;HTC_DUE_IN_TERMS_OF_AC;HTC_INTERVAL;HTC_LAST_COMPLIED_EXEC;HTC_LAST_PERFORMED_DATE;HTC_LAST_PERFORMED_VALUE;HTC_NEXT_SCHEDULED_DATE;HTC_NEXT_SCHEDULED_VALUE;HTC_PARAMETER;HTC_PART_DESC;HTC_PART_NO;HTC_REMAINING_HOURS;HTC_SERIAL_NO;HTC_SR_NO;HTC_TASK_DESC;HTC_TCN;HTC_TIME_UNIT;" scDINames="" diNames="DUMMYS_DTL;DUMMYS_DTL1;DUMMYS_DTL2;DUMMYS_DTL3;DUMMYS_DTL4;DUMMYS_DTL5;HTC_AC_REG_NO;HTC_AC_USAGE_VAL;HTC_ATA_NO;HTC_CSN;HTC_DUE_IN_TERMS_OF_AC;HTC_INTERVAL;HTC_LAST_COMPLIED_EXEC;HTC_LAST_PERFORMED_DATE;HTC_LAST_PERFORMED_VALUE;HTC_NEXT_SCHEDULED_DATE;HTC_NEXT_SCHEDULED_VALUE;HTC_PARAMETER;HTC_PART_DESC;HTC_PART_NO;HTC_REMAINING_HOURS;HTC_SERIAL_NO;HTC_SR_NO;HTC_TASK_DESC;HTC_TCN;HTC_TIME_UNIT;" inDICnt="0" outDICnt="26" ioDICnt="0" scDICnt="0">
+        <DI dataItemName="DUMMYS_DTL" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMYS_DTL1" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMYS_DTL2" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMYS_DTL3" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMYS_DTL4" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="DUMMYS_DTL5" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_AC_REG_NO" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_AC_USAGE_VAL" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_ATA_NO" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_CSN" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_DUE_IN_TERMS_OF_AC" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_INTERVAL" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_LAST_COMPLIED_EXEC" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_LAST_PERFORMED_DATE" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="1" />
+        <DI dataItemName="HTC_LAST_PERFORMED_VALUE" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_NEXT_SCHEDULED_DATE" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="1" />
+        <DI dataItemName="HTC_NEXT_SCHEDULED_VALUE" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_PARAMETER" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_PART_DESC" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_PART_NO" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_REMAINING_HOURS" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="1900-01-01" bt_Type="DATE" isModel="1" />
+        <DI dataItemName="HTC_SERIAL_NO" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_SR_NO" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_TASK_DESC" dataType="8" dataLength="150" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_TCN" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+        <DI dataItemName="HTC_TIME_UNIT" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="1" />
+    </SEG>
+</RvwService>

@@ -1,0 +1,49 @@
+<RvwService serviceName="GAEDKHTCPINITIALIZE_srv" serviceType="0" inSegs="" outSegs="ErrorDetails;GAEDKHTCP_ac_mod_ini_msg;" ioSegs="GAEDKHTCP_ini_in_hsg;" scSegs="" inSegCnt="0" outSegCnt="1" scSegCnt="0" psCnt="1" ioSegCnt="1" dataSegs="GAEDKHTCP_ac_mod_ini_msg;GAEDKHTCP_ini_in_hsg;" segCnt="2">
+    <PS sectionType="0" seqNo="1" controlExpressionEval="false" controlExpression="" loopingStyle="0" loopCausingSegment="" ceInstDepFlag="0" brsCnt="1" sectionName="GAEDKHTCP_INITIALIZE_ps">
+        <BR seqNo="1" baseArtifact="false" isMethod="1" progID="" methodName="gaedkhtcp_ac_mod_ini_mth" integServiceName="" controlExpressionEval="false" controlExpression="" executionFlag="2" loopSegment="" methodID="0" accessesDatabase="1" systemGenerated="1" broName="" ceInstDepFlag="0" spName="gaedkhtcp_ac_mod_in" operationType="0" spErrorProtocol="0" brppCnt="13" brlpCnt="2">
+            <PP physicalParameterName="ctxt_language" seqNo="1" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="language" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_ouinstance" seqNo="2" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="ouinstance" spParameterType="INTEGER" />
+            <PP physicalParameterName="ctxt_role" seqNo="3" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="role" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="ctxt_service" seqNo="4" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="service" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="ctxt_user" seqNo="5" isCompoundParam="1" flowDirection="0" dataSegmentName="fw_context" dataItemName="user" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_COMPONENT" seqNo="6" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="CTXT_BASE_COMPONENT" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_ACTIVITY" seqNo="7" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="CTXT_BASE_ACTIVITY" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_BASE_OU" seqNo="8" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="CTXT_BASE_OU" spParameterType="INTEGER" />
+            <PP physicalParameterName="CTXT_BASE_UI" seqNo="9" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="CTXT_BASE_UI" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="CTXT_EXTN_BASED_ON" seqNo="10" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="CTXT_EXTN_BASED_ON" spParameterType="NVARCHAR" />
+            <PP physicalParameterName="AC_REG_NUMBER" seqNo="11" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="AC_REG_NUMBER" spParameterType="VARCHAR" />
+            <PP physicalParameterName="HIDDEN_INT" seqNo="12" isCompoundParam="1" flowDirection="0" dataSegmentName="GAEDKHTCP_ini_in_hsg" dataItemName="HIDDEN_INT" spParameterType="NUMERIC" />
+            <PP physicalParameterName="RSETac_mod" seqNo="13" isCompoundParam="0" flowDirection="1" dataSegmentName="GAEDKHTCP_ac_mod_ini_msg" dataItemName="" />
+            <LP logicalParameterName="AC_MODEL" seqNo="1" dataSegmentName="GAEDKHTCP_ac_mod_ini_msg" dataItemName="AC_MODEL" />
+            <LP logicalParameterName="AC_MODEL_HDN" seqNo="2" dataSegmentName="GAEDKHTCP_ac_mod_ini_msg" dataItemName="AC_MODEL_HDN" />
+        </BR>
+    </PS>
+    <SEG segmentName="fw_context" seqNo="1" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="1" segKeys="" diCnt="13" inDINames="" ioDINames="SecToken;Component;Service;OUInstance;ComponentInstance;" outDINames="TransactionObject;User;Language;TxnTime;TxnID;TxnOutcome;" scDINames="ConnectionString;Role;" diNames="SecToken;Component;Service;OUInstance;ComponentInstance;TransactionObject;User;Language;TxnTime;TxnID;TxnOutcome;ConnectionString;Role;" inDICnt="0" outDICnt="6" ioDICnt="5" scDICnt="2">
+        <DI dataItemName="TransactionObject" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="User" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="Language" dataType="3" dataLength="20" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="SecToken" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="Component" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="Service" dataType="8" dataLength="32" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="OUInstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ComponentInstance" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="2" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="TxnTime" dataType="8" dataLength="50" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="TxnID" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="TxnOutcome" dataType="8" dataLength="10" isPartOfKey="0" flowAttribute="1" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="" />
+        <DI dataItemName="ConnectionString" dataType="8" dataLength="255" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+        <DI dataItemName="Role" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="3" mandatoryFlag="1" defaultValue="" bt_Type="STRING" isModel="0" />
+    </SEG>
+    <SEG segmentName="GAEDKHTCP_ac_mod_ini_msg" seqNo="0" instanceFlag="1" flowDirection="1" mandatory="0" isPartOfHierarchy="1" segKeys="" diCnt="2" inDINames="" ioDINames="" outDINames="AC_MODEL;AC_MODEL_HDN;" scDINames="" diNames="AC_MODEL;AC_MODEL_HDN;" inDICnt="0" outDICnt="2" ioDICnt="0" scDICnt="0">
+        <DI dataItemName="AC_MODEL" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="" />
+        <DI dataItemName="AC_MODEL_HDN" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="1" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="" />
+    </SEG>
+    <SEG segmentName="GAEDKHTCP_ini_in_hsg" seqNo="0" instanceFlag="0" flowDirection="2" mandatory="1" isPartOfHierarchy="0" segKeys="" diCnt="7" inDINames="AC_REG_NUMBER;HIDDEN_INT;" ioDINames="CTXT_BASE_ACTIVITY;CTXT_BASE_COMPONENT;CTXT_BASE_OU;CTXT_BASE_UI;CTXT_EXTN_BASED_ON;" outDINames="" scDINames="" diNames="AC_REG_NUMBER;CTXT_BASE_ACTIVITY;CTXT_BASE_COMPONENT;CTXT_BASE_OU;CTXT_BASE_UI;CTXT_EXTN_BASED_ON;HIDDEN_INT;" inDICnt="2" outDICnt="0" ioDICnt="5" scDICnt="0">
+        <DI dataItemName="AC_REG_NUMBER" dataType="8" dataLength="40" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="~#~" bt_Type="VARCHAR" isModel="" />
+        <DI dataItemName="CTXT_BASE_ACTIVITY" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="CTXT_BASE_COMPONENT" dataType="8" dataLength="20" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="CTXT_BASE_OU" dataType="3" dataLength="4" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="0" bt_Type="INTEGER" isModel="" />
+        <DI dataItemName="CTXT_BASE_UI" dataType="8" dataLength="100" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="CTXT_EXTN_BASED_ON" dataType="8" dataLength="30" isPartOfKey="0" flowAttribute="2" mandatoryFlag="0" defaultValue="~#~" bt_Type="NVARCHAR" isModel="" />
+        <DI dataItemName="HIDDEN_INT" dataType="5" dataLength="19" isPartOfKey="0" flowAttribute="0" mandatoryFlag="0" defaultValue="-915" bt_Type="NUMERIC" isModel="" />
+    </SEG>
+</RvwService>
